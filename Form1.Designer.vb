@@ -22,41 +22,54 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnCikis = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.txtExeList = New System.Windows.Forms.TextBox()
+        Me.lblResult = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btnCikis
+        'btnExit
         '
-        Me.btnCikis.Location = New System.Drawing.Point(554, 29)
-        Me.btnCikis.Name = "btnCikis"
-        Me.btnCikis.Size = New System.Drawing.Size(75, 23)
-        Me.btnCikis.TabIndex = 0
-        Me.btnCikis.Text = "Ç I K I Ş"
-        Me.btnCikis.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(238, 12)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 0
+        Me.btnExit.Text = "EXIT"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtExeList
         '
-        Me.TextBox1.Location = New System.Drawing.Point(163, 67)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(220, 91)
-        Me.TextBox1.TabIndex = 1
+        Me.txtExeList.Location = New System.Drawing.Point(12, 12)
+        Me.txtExeList.Multiline = True
+        Me.txtExeList.Name = "txtExeList"
+        Me.txtExeList.ReadOnly = True
+        Me.txtExeList.Size = New System.Drawing.Size(220, 238)
+        Me.txtExeList.TabIndex = 1
+        Me.txtExeList.Text = "EXEold'da varolan programlar:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lblResult
+        '
+        Me.lblResult.AutoSize = True
+        Me.lblResult.Location = New System.Drawing.Point(12, 253)
+        Me.lblResult.Name = "lblResult"
+        Me.lblResult.Size = New System.Drawing.Size(43, 13)
+        Me.lblResult.TabIndex = 2
+        Me.lblResult.Text = "Result :"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(776, 406)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.btnCikis)
+        Me.ClientSize = New System.Drawing.Size(318, 275)
+        Me.Controls.Add(Me.lblResult)
+        Me.Controls.Add(Me.txtExeList)
+        Me.Controls.Add(Me.btnExit)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "MEGA-Test01"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnCikis As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents txtExeList As System.Windows.Forms.TextBox
+    Friend WithEvents lblResult As Label
 End Class
